@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>page-flip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+  <link rel='stylesheet' href='page-flip.css'>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+      background: #74ebd5;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ACB6E5, #74ebd5);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    #container {
+      position: absolute;
+      top: 10%;
+      left: 25%;
+      width: 50%;
+    }
+
+    #magazine {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="background-color: #000;width: 100%;height: 55px;"></header>
+  <div id="side-wrapper"></div>
+  <div id="container" style="border: 1px solid red;">
+    <div id="magazine"></div>
+  </div>
+  <script src="page-flip.js"></script>
+  <script>
+    new Pageflip('#magazine', [
+      // image format/extension will have to be constructed
+      'pages/page-1.png',
+      'pages/page-2.jpg',
+      'pages/page-3.jpg',
+      'pages/page-4.png'
+    ]);
+// more pages can be added to the above array, I put 4 images as a placeholder
+  </script>
+</body>
+
+</html>
