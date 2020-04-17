@@ -34,7 +34,3 @@ Then init your pageflip, providing the main element (where you want to put the p
 > **IMPORTANT:**
 
 > You need to provide an even number of pages!
-
-> **WARNING:**
-
-> <span style="color: red; font-weight: bold;">This functionality is very buggy</span>
